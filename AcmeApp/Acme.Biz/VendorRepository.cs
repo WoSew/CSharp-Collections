@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,15 @@ namespace Acme.Biz
             return vendor;
         }
 
+        public T RetrieveValue<T>(string sql, T defaulValue)
+        {
+            //call the db to retrieve the value
+            //if no value is returned, return the default value
+
+            T value = defaulValue;
+            return value;
+        }
+        
         /// <summary>
         /// Save data for one vendor.
         /// </summary>
